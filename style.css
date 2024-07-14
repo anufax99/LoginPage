@@ -1,0 +1,262 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw; 
+    background-color: #E7E0FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+video{
+    position: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: -1;
+}
+
+
+.mainConatiner{
+    height: 800px;
+    width: 1140px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 43px;
+    box-shadow: 12px 8px 33.4px -22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    backdrop-filter: blur(20px);
+}
+
+.photo{
+    background-image: url(login-image.jpg);
+    height: 652px;
+    width: 403px;
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0px 7px 33.4px -5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.photo:hover{
+    transform: scale(1.03);
+}
+
+.details{
+    height: 669px;
+    width: 434px;   
+}
+
+
+#mainHeading{
+    font-size: 38px;
+    font-family: "Inter", sans-serif;
+    font-weight: 490;
+}
+
+.headingWelcome{
+    color: #ffffff;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+}
+
+
+/* for userId */
+
+
+.userid {
+    height: 34px;
+    width: 100%;
+    position: relative;
+}
+
+.userid input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+
+.userid  input:focus ~ label,
+.userid input:valid ~ label{
+    transform: translateY(-22px);
+    font-size: 15px;
+
+}
+
+.userid label{
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    pointer-events: none;
+    transition: all .3s ease-in;
+}
+
+
+/* for Password */
+
+.pass {
+    height: 34px;
+    width: 100%;
+    position: relative;
+}
+
+.pass input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+
+.passwordSafety input #check{
+    width: 20px;
+    height: 20px;
+}
+
+.pass  input:focus ~ label,
+.pass input:valid ~ label{
+    transform: translateY(-22px);
+    font-size: 15px;
+
+}
+
+.pass label{
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    pointer-events: none;
+    transition: all .3s ease-in;
+}
+
+.passwordSafety{
+    width: 393px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.passwordSafety p{
+    margin-left: 45px;
+}
+
+.continue{
+    width: 405px;
+    height: 45px;
+    border: none;
+    border-radius: 32px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  0px 7px 9px -5px rgb(0, 0, 0, 0.5);
+    transition: all .1s;
+}   
+
+.continue:hover{
+    background-color: #e6e6e6;
+}
+
+.continue:active{
+    background-color: #f3f3f3;
+}
+
+
+.or{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+
+.continueWG{
+    height: 45px;
+    width: 405px;
+    background-color: #ffffff;
+    box-shadow:  0px 7px 9px -5px rgb(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .1s;
+}
+
+
+.continueWG:hover{
+    background-color: #e6e6e6;
+}
+
+.continueWG:active{
+    background-color: #f3f3f3;
+}
+
+
+
+.continueWG img{
+    width: 32px;
+    height: 32px;
+}
+
+
+.continueWG span{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+
+.newacc{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+
+.signUp{
+    width: 405px;
+    height: 45px;
+    border: none;
+    border-radius: 32px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    background-color: #8A73CA;
+    color: white;
+    box-shadow:  0px 7px 9px -5px rgb(0, 0, 0, 0.5);
+    transition: all .05s;
+}
+
+.signUp:hover{
+    background-color: #e6e6e6;
+    color: black;
+}
+
+.signUp:active{
+    background-color: #9a80e2;
+}
